@@ -1,8 +1,9 @@
 const gulp = require('gulp');
 var webserver = require('gulp-webserver');
 var stylus = require('gulp-stylus');
+var uglify = require('gulp-uglify');
 
-gulp.task('default', ['webserver' , 'compress']);
+gulp.task('default', ['webserver' , 'compress','uglify', 'watch']);
 
 gulp.task('webserver', function() {
   gulp.src('./dist/')
@@ -19,4 +20,14 @@ gulp.task('compress', function () {
       compress: true
     }))
     .pipe(gulp.dest('./dist/css'));
+});
+
+gulp.task('uglify', function() {
+    gulp.src('js/*.js')
+        .pipe(uglify())
+        .pipe(gulp.dest('min_js'));
+});
+
+gulp.task('watch', function() {
+    gulp.watch('js/**/*.js', ['uglify']);
 });

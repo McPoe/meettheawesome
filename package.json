@@ -29,6 +29,7 @@
   "homepage": "https://github.com/McPoe/meettheawesome#readme",
   "devDependencies": {
     "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^2.0.0",
     "gulp-webserver": "^0.9.1"
   },
   "dependencies": {
