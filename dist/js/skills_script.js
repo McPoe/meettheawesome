@@ -43,7 +43,6 @@ $(document).ready(function(){
 	$(".star-five-d").click(function(event){
 	$(".star-five-d").addClass("star-new-one");
 	});
-
-	*/
+});
 
 

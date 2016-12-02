@@ -7,9 +7,10 @@ var template =  '<div class="container">' +
 							'<h5 class="name">{{name}}</h5>' +
 							'<h6 class="name">{{country}}</h6>' +
 							'<h6 class="name">{{years}}</h6>' +
-							'<i class="material-icons next" data="{{number}}">play_arrow</i>' +
+							'<i class="material-icons next colors" data="{{number}}">add_circle</i>' +
 						'</div>' +
 					'</div>' +
+					'<hr>' +
 				'</div>';
 
 var cargarPagina = function() {
